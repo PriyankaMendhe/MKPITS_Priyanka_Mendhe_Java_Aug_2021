@@ -1,2 +1,3 @@
 series
 no. series from github web
+Alphabet series from notepad
