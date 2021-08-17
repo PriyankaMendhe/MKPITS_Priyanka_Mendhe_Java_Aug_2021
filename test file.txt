@@ -1,0 +1,3 @@
+first test text
+2nd text test
+3rd from notepad
