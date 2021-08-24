@@ -47,6 +47,10 @@ int main()
 		surcharge_amount= (float) amount_charges * 15/100 ;
 	
 	}
+	if(amount_charges<=100)
+	{
+	   amount_charges  = 100.0f;
+	}
 	
 	net_amount=  amount_charges + surcharge_amount;
 	
