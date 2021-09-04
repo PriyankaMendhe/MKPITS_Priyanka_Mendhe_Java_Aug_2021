@@ -11,13 +11,13 @@ int main()
 	int n;
 	printf("\n Input number of terms : ");
 	scanf("%d",&n);
-	calculate_evenno(n);
+	calculate_square(n);
 }
 
-void calculate_evenno(int n)
+void calculate_square(int n)
 {
 	int i,sq,sum=0;
-	printf(" The square natural upto 5 terms are : ");
+	printf(" The square natural upto %d terms are : ",n);
 	for(i=1;i<=n;i++)
 	{
 		    sq=i*i;  
