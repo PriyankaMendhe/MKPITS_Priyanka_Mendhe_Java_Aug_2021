@@ -21,11 +21,13 @@ class Customer
    }
    void displayProductInfo()
    {
-       System.out.println(" customerId = "+ customerId);
-       System.out.println(" customer name = "+ customerName);
-       System.out.println("customerAdd   = "+ customerAdd);
-       System.out.println("customer mobile no.   = "+ customerMob);
-       System.out.println("customer Email   = "+ customerEmail);
+       //System.out.println(" customerId = "+ customerId);
+      // System.out.println(" customer name = "+ customerName);
+      // System.out.println("customerAdd   = "+ customerAdd);
+      // System.out.println("customer mobile no.   = "+ customerMob);
+      // System.out.println("customer Email   = "+ customerEmail);
+
+      System.out.println(customerId+" "+ customerName+ " "+customerAdd+ " "+customerMob+ " " +customerEmail);//printing both way
 
    }
 }
