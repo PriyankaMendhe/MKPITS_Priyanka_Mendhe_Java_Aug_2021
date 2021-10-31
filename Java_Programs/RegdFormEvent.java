@@ -84,36 +84,52 @@ class RegdFormEvent extends Frame implements ActionListener
            StringBuilder sb = new StringBuilder();
 
            String username = t1.getText();
-           sb.append("Username : "+username);
+           sb.append("Username : "+username +"\n");
           // ta1.setText("Username : "+username);
 
 //Gender
            if(c1.getState()==true)
            { //ta1.setText("Gender: Male");
 
-           sb.append("  Gender: Male");
+           sb.append(" Gender: Male "+"\n");
 
            }
 
            if(c2.getState()==true)
            {//ta1.setText("Gender: Female");// print only 1 line
 
-             sb.append("  Gender: FeMale");// String builder we can print total info
+             sb.append(" Gender: Female" +"\n");// String builder we can print total info
            }
 //Hobby
-          if(c3.getState()==true)
-		   { //ta1.setText("Hobby: Music");
 
-		    sb.append(" Hobby: Music");
 
-		   }
+          if((c3.getState()==true)&&(c4.getState()==true))
+          {
 
-		   if(c4.getState()==true)
-		   {//ta1.setText("Hobby: Cricket");
+			   sb.append(" Hobby: Music, Cricket"+" \n");
 
-		   sb.append(" Hobby: Cricket");
+		  }else
+		  {
 
-		   }
+			      if(c3.getState()==true)
+				 		   { //ta1.setText("Hobby: Music");
+
+				 		    sb.append(" Hobby: Music"+" \n");
+
+				 		   }
+
+				 		   if(c4.getState()==true)
+				 		   {//ta1.setText("Hobby: Cricket");
+
+				 		   sb.append(" Hobby: Cricket"+" \n");
+
+		                   }
+
+
+			}
+
+
+
 
          ta1.setText(sb.toString());
 
