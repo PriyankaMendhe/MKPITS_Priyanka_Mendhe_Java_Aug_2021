@@ -1,0 +1,1 @@
+CREATE PROCEDURE getEmpName (IN empno INT, OUT emp_name VARCHAR(255)) BEGIN SELECT name INTO emp_name FROM Employees WHERE emp_no = empno; END;
