@@ -1,0 +1,57 @@
+h1{
+
+      
+     background-color:Gray;
+     height:100px;
+     width:1330px;
+     color: white;
+     font-family: 'Courier New', Courier, monopspace;
+     font-size: 50px;
+     margin:0px
+      
+    
+  }
+  
+  
+ div.section {
+ 
+ margin: opx;
+ padding: 0px;
+ height:450px;
+ width:370px;
+ background-color:Yellow;
+ float:left;
+
+  }
+  
+    a
+  {
+      
+     display:block;
+  
+  
+  }
+  div#first
+  {
+        
+  }
+  div#second
+  {
+      width:960px;
+      height:450px;
+      background-color:Pink;
+      float:left;
+  
+  
+  }
+  div#third
+    {
+        
+        width:1330px;
+        height:50px;
+        color:white;
+        background-color:Gray;
+        float:left;
+    
+          
+    }
