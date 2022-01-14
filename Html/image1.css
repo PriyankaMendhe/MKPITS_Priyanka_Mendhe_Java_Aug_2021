@@ -1,0 +1,39 @@
+.image1
+{
+
+   opacity: 0.4;
+
+
+}
+.image2:hover
+{
+
+    opacity: 0.4;
+
+
+}
+.image3
+{
+
+   opacity: 0.8;
+
+}
+.image3:hover
+{
+
+    opacity: 1;
+
+
+}
+img
+{
+  
+   height:200px;
+   border: red 12px solid;
+   
+   
+   
+
+
+
+}
