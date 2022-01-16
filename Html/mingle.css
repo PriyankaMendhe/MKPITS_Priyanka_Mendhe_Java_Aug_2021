@@ -1,0 +1,61 @@
+ 
+ div{
+      
+         margin-top:100px;
+         margin-right:450px;
+         margin-left:400px;
+         margin-bottom:100px;
+         
+         padding:20px;
+         height:400px;
+         width:500px;
+         <!--  
+         border: 1px solid slateBlue;--> 
+         background-color:white;
+         
+         }
+         
+ input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;<!-- #ccc is a light shade of gray -->
+ 
+}
+ button:hover {
+  opacity: 0.8;
+}
+ button {
+   background-color:MediumSlateBlue;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+ }
+ 
+ form
+  
+  {
+ border: 3px solid #f1f1f1;
+ padding: 4px 20px ;
+ width: 100%;
+ 
+}
+h2
+{
+     width:100px;
+     height:40px;
+     background-color:MediumSlateBlue;
+     margin-left:445px;
+     margin-top:80px;
+     line-height:25px;
+     color:white;
+     text-align:center;
+     
+
+
+
+}
