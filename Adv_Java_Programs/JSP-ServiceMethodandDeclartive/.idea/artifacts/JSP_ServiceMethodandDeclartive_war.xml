@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSP-ServiceMethodandDeclartive:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>JSP-ServiceMethodandDeclartive</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="JSP-ServiceMethodandDeclartive-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JSP-ServiceMethodandDeclartive:war exploded" />
+    </root>
+  </artifact>
+</component>
