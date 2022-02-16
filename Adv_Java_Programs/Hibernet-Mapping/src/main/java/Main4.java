@@ -29,15 +29,18 @@ public class Main4 {
 
         // user to multiple vehicle
         u1.getVob().add(v1);
+        u1.getVob().add(v2);
+
+        u2.getVob().add(v1);
         u2.getVob().add(v2);
+
 
         ////  vehicle to multiple user
         v1.getUsr4().add(u1);
         v1.getUsr4().add(u2);
 
-
-
-
+        v2.getUsr4().add(u1);
+        v2.getUsr4().add(u2);
 
 
 
