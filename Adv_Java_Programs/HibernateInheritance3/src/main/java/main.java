@@ -53,6 +53,7 @@ public class main {
         //for HQL
         entityManager.getTransaction().begin();
 
+
         // for select all data from vehicle8
         Query query =(Query) entityManager.createQuery("from Vehicle8");
 
@@ -65,9 +66,9 @@ public class main {
         }
 
         // for select all data from vehicle8 where id=2
-        Query query1 =(Query) entityManager.createQuery("from Vehicle8 where id=2");
+        org.hibernate.Query query1 =(org.hibernate.query.Query) entityManager.createQuery("from Vehicle8 where id=2");
 
-        List <Vehicle8> list1 = query1.getResultList();
+        List <Vehicle8> list1 = query1.list();
 
         for ( Vehicle8 ob : list1) {
 
@@ -75,10 +76,56 @@ public class main {
 
         }
 
-
+        System.out.println(list.size());
 
         // System.out.println(query.getResultList().size());
         //System.out.println(query.getResultList() );
+//to find
+        org.hibernate.Query query3 =(org.hibernate.query.Query) entityManager.createQuery("from Vehicle8 where id=3");
+
+        List l1 = query3.list();
+
+        System.out.println(l1.size());
+
+
+        org.hibernate.Query query4 =(org.hibernate.query.Query) entityManager.createQuery("from Vehicle8 where id= :Id");
+        query4.setLong("Id",4);
+
+        List l4 = query4.list();
+
+        System.out.println(l4.size());
+
+
+//to update
+        org.hibernate.Query query5 =(org.hibernate.query.Query) entityManager.createQuery("update Vehicle8 set vname= :vn where id= :Id");
+        query5.setString("vn","Audi");
+        query5.setLong("Id",5);
+
+        int i = query5.executeUpdate();
+
+        //to display update value in id =5
+
+        org.hibernate.Query query6 =(org.hibernate.query.Query) entityManager.createQuery("from Vehicle8 where id=5");
+
+        List <Vehicle8> list5 = query6.list();
+
+        for ( Vehicle8 ob1 : list5) {
+
+            System.out.println(ob1.getVname()+ "" +ob1.getId());
+
+        }
+
+
+        //to delete
+        org.hibernate.Query query7 =(org.hibernate.query.Query) entityManager.createQuery("delete from Vehicle8  where id= :Id");
+
+        query7.setLong("Id",7);
+
+        query7.executeUpdate();
+
+
+
+
 
         entityManager.getTransaction().commit();
 
