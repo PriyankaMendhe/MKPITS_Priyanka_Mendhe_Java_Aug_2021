@@ -12,7 +12,17 @@ public class SpringDemo3Application {
         ApplicationContext appcont = new ClassPathXmlApplicationContext("/templates/bean.xml");
 
         Vehicle vehiOB = (Vehicle) appcont.getBean("vehiOB");
-        vehiOB.vehicleName();
+
+        //set this value in been file
+//        vehiOB.setId(2);
+//        vehiOB.setVname("ALZTO");
+
+          vehiOB.vehicleName();
+
+
+          //for Account class id and ref store in been file
+        Account acc  = (Account) appcont.getBean("acc");
+        acc.trans();
 
 
     }
