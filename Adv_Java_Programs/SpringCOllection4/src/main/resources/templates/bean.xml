@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="rob" class="com.example.springcollection4.Report">
+    <property name="listemp">
+        <props>
+            <prop key="username">Ramna</prop>
+            <prop key="password">Ram</prop>
+
+        </props>
+
+    </property>
+
+
+</bean>
+</beans>

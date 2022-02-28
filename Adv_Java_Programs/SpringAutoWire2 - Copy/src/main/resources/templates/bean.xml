@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="eob" class="com.example.springautowire2.Employee">
+
+
+    <constructor-arg type="java.lang.String" value="Priyanka"/>
+    <constructor-arg type="int" value="1"/>
+</bean>
+
+<!--    constructor injection-->
+<!--    <bean id="aob" autowire="constructor" class="com.example.springautowire2.Account">-->
+
+<!--    </bean>-->
+
+    <!--    setter injection-->
+<!--    <bean id="aob" autowire="byName" class="com.example.springautowire2.Account"></bean>-->
+
+
+<!--    byType with setter injection   -->
+
+<!--    <bean id="aob" autowire="byType" class="com.example.springautowire2.Account"></bean>-->
+
+<!--default autowire-->
+
+<!--    <bean id="aob" autowire="default" class="com.example.springautowire2.Account"></bean>-->
+
+
+<!--    no autowire-->
+
+    <bean id="aob" autowire="no" class="com.example.springautowire2.Account"></bean>
+
+</beans>

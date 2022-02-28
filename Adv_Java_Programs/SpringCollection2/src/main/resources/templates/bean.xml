@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="eob" class="com.example.springcollection2.Employee">
+    <constructor-arg index="0" value="1"/>
+    <constructor-arg index="1" value="Priyanka"/>
+</bean>
+
+
+    <bean id="rob" class="com.example.springcollection2.Report">
+
+        <property name="employeeSet">
+            <set>
+                <ref bean="eob"></ref>
+                <bean class="com.example.springcollection2.Employee">
+                    <constructor-arg index="0" value="2"/>
+                    <constructor-arg index="1" value="Priyanka2"/>
+                </bean>
+
+                <bean class="com.example.springcollection2.Employee">
+                    <constructor-arg index="0" value="3"/>
+                    <constructor-arg index="1" value="Priyanka3"/>
+                </bean>
+
+            </set>
+        </property>
+
+
+    </bean>
+</beans>
