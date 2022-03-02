@@ -12,4 +12,6 @@
 
     <bean id="acc" class="com.example.springscope.Account" ></bean>
 
+
+    <bean class="com.example.springscope.BeanPostProcessorWork"></bean>
 </beans>
