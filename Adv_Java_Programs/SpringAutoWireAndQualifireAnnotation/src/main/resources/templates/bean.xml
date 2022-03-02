@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="eob" class="com.example.springautowireandqualifireannotation.Employee">
+    <qualifier value="MYBEAN"></qualifier>
+    <property name="name" value="KIA"></property>
+    <property name="id" value="1"></property>
+
+</bean>
+
+    <bean id="aob"  class="com.example.springautowireandqualifireannotation.Account" >
+<!--        <property name="eob" ref="eob" ></property>-->
+    </bean>
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+
+</beans>
