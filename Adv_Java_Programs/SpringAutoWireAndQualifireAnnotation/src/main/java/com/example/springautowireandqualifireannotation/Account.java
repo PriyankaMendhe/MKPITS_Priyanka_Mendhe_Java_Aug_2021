@@ -18,7 +18,7 @@ public class Account {
         this.eob = eob;
     }
 
-   
+
 
     @Override
     public String toString() {
