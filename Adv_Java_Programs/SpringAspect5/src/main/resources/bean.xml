@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <bean id="eob" class="com.example.springaspect5.emp">
+        <property name="id" value="1"></property>
+        <property name="name" value="Kia"></property>
+    </bean>
+<bean id="sob" class="com.example.springaspect5.stud">
+    <property name="id" value="2"></property>
+    <property name="name" value="KIa 2"></property>
+</bean>
+
+<!--    Aspect5 for fully classified name call from aspect for specified class method-->
+<!--<bean id="aop" class="com.example.springaspect5.Aspect5"></bean>-->
+
+<!--    for point cut method Aspect6-->
+<!--    <bean id="aop" class="com.example.springaspect5.Aspect6"></bean>-->
+
+    <!--    for point cut method Aspect7-->
+<!--     <bean id="aop" class="com.example.springaspect5.Aspect7"></bean>-->
+
+<!--    joinPoint point get to know which method of which class executes-->
+<!--<bean id="aop" class="com.example.springaspect5.Aspect8"></bean>-->
+
+    <bean id="aop" class="com.example.springaspect5.Aspect9"></bean>
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+ <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+
+
+    <bean id="eob" class="com.example.springaspect4.emp">
+        <property name="name" value="Kia"></property>
+        <property name="id" value="1"></property>
+    </bean>
+
+    <bean id="sob" class="com.example.springaspect4.stud">
+        <property name="name" value="KIA2"></property>
+        <property name="id" value="2"></property>
+    </bean>
+
+    <bean id="aop" class="com.example.springaspect4.Aspect4"></bean>
+</beans>
