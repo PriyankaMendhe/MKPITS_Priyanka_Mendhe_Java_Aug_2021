@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+  var num=151,sum;
+
+  var temp=num;
+
+  var n1,n2,n3,n4;
+
+  n1=num%10;//151%10=1;
+
+  num=~~(num/10);//151/10=15
+
+  n2= num%10;//15%10=5
+
+  n3=~~(num/10);//15/10 =1
+
+  sum=n3*100+n2*10+n1;
+
+  document.write("Value od Sum :"+sum+"<br>"+"Value of temp: "+temp+"<br>");
+
+  if(sum==temp)
+  {
+      document.write("true");
+  }
+  else
+  {
+      document.write("false");
+  }
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

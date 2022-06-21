@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var num=151;
+
+        var n1, n2,n3,sum=0;
+
+        var c,c1;
+
+        temp=num;
+
+        n1=num%10;//151%10 = 1
+
+        num = num/10;//15.1
+
+        c =Math.round(num);//15
+
+        n2=c%10;//5
+
+        num=c/10;//1.
+
+        c1=Math.round(num);//1
+
+        document.write("c1 :"+c1+"n2: "+n2+"n1:"+n1);
+
+        sum = c1*100+n2*10+n1;
+
+        document.write("sum: "+sum+"temp: "+temp);
+
+        if(sum==temp)
+        {
+
+           document.write("Palindrome");
+
+        }else
+        {
+            document.write("not Palindrome");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
