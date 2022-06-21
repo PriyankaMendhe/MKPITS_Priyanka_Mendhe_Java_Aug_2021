@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script src="validation.js"></script>
+</head>
+<body>
+<div class="container"><br>
+
+    <div class="col-lg-6 m-auto d-block">
+
+        <form action="#"  class="bg-light">
+
+            <div class="form-group">
+                <label for="user" class="font-weight-bold"> Username: </label>
+                <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                <span id="username" class="text-danger font-weight-bold"> </span>
+            </div>
+
+
+            <div class="form-group">
+                <label for="user" class="font-weight-bold"> Password: </label>
+                <input type="text" name="user" class="form-control" id="password" autocomplete="off">
+                <span id="pass" class="text-danger font-weight-bold"> </span>
+            </div>
+            <div class="form-group">
+                <label for="user" class="font-weight-bold"> Confirm Password: </label>
+                <input type="text" name="user" class="form-control" id="Cpassword" autocomplete="off">
+                <span id="cpass" class="text-danger font-weight-bold"> </span>
+            </div>
+
+            <div class="form-group">
+                <label for="user" class="font-weight-bold"> Mobile NO: </label>
+                <input type="text"     name="user" class="form-control" id="mno" autocomplete="off">
+                <span id="mobno" class="text-danger font-weight-bold"> </span>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="user" class="font-weight-bold"> Email: </label>
+                <input type="text" name="user" class="form-control" id="email" autocomplete="off">
+                <span id="emails" class="text-danger font-weight-bold"> </span>
+            </div>
+
+            <br>
+
+            <!-- Submit button -->
+            <button type="submit" onclick="return validate()" class="btn btn-primary btn-block mb-4">Submit</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

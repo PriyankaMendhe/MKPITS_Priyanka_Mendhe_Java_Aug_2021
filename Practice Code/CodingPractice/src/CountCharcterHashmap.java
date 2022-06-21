@@ -1,0 +1,33 @@
+import java.util.HashMap;
+
+public class CountCharcterHashmap {
+
+    public static void main(String[] args) {
+
+        String str = "This is done by me";
+
+        String[] split =str.split("");
+
+        HashMap<String, Integer>map = new HashMap<String, Integer>();
+
+        for(int i=0; i<split.length ;i++)
+        {
+            if(map.containsKey(split[i]))
+            {
+                int count = map.get(split[i]) ;//get key value
+                map.put(split[i],count+1);
+
+
+            }else
+            {
+
+                map.put(split[i],1);
+
+            }
+
+
+
+        }
+        System.out.println(map);
+    }
+}
