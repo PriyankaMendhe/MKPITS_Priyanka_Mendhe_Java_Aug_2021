@@ -1,0 +1,23 @@
+.button
+{
+    font-family:"Malgun Gothic Semilight";
+    background-color: #555555;
+    color: aliceblue;
+    padding: 15px 25px;
+    text-decoration: snow;
+
+
+
+}
+.display-box
+{
+    padding: 15px 13px;
+    font-family: "Malgun Gothic Semilight";
+    font-size: 90%;
+
+}
+.button:active
+{
+    background: aqua;
+}
+
