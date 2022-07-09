@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysqldirver">
+    <CLASSES>
+      <root url="jar://F:/mysqldirver/mysqldirver/mysql-connector.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
